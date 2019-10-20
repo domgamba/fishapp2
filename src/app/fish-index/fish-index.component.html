@@ -1,0 +1,8 @@
+<app-fish-list></app-fish-list>
+<app-fish-selection
+*ngIf= "selectedFish else infoText"
+[fish] = "selectedFish"></app-fish-selection>
+<ng-template #infoText>
+  <p>Select a fish!
+  </p>
+</ng-template>

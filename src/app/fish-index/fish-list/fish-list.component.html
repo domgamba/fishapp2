@@ -1,0 +1,13 @@
+<h1>Fish-Index</h1>
+  <button class="btn btn-primary">Freshwater</button>
+  <button class="btn btn-primary">Saltwater</button>
+  <hr>
+<div class="row">
+  <div class="col-xs-10">
+    <app-fish-list-item
+    *ngFor="let fishEl of fish"
+    [fish] = "fishEl"
+    >
+    </app-fish-list-item>
+  </div>
+</div>
